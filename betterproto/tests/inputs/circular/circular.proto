@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Test {
+    oneof test_oneof {
+        ref test_ref = 2;
+    }
+}
+
+message ref {
+    Test action = 3;
+}
